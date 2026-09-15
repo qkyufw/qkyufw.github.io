@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>键盘风暴+AI：一个 idea 制造机 · 我的博客</title><meta name="description" content="可能还有人对我之前写的键盘风暴有一些印象，最近我在一位朋友的建议下，加上了 AI 功能，又拼拼凑凑改了一个 MVP 版本出来，在这里分享一下。
+我加上了三个功能，分别是：扩展思路，整理精简，导出草稿，名字取得比较随意，后面可能还会修改。
+功能介绍扩展思路如果您读过我的《键盘风暴》这篇文章，那么您应该"><meta name="og:description" content="可能还有人对我之前写的键盘风暴有一些印象，最近我在一位朋友的建议下，加上了 AI 功能，又拼拼凑凑改了一个 MVP 版本出来，在这里分享一下。
+我加上了三个功能，分别是：扩展思路，整理精简，导出草稿，名字取得比较随意，后面可能还会修改。
+功能介绍扩展思路如果您读过我的《键盘风暴》这篇文章，那么您应该"><meta name="twitter:site" content="我的博客"><meta name="twitter:title" content="键盘风暴+AI：一个 idea 制造机"><meta name="twitter:card" content="summary"><meta name="keywords" content="博客,技术,生活"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 8.1.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div class="container" id="stage"><div class="row"><div class="col-sm-3 col-xs-12 side-container invisible" id="side-bar"><div class="vertical-text site-title"><h3 class="site-title-small" tabindex="-1"><a class="a-title" href="/">Being Present, Opening Up, Doing What Matters</a></h3><h1 class="site-title-large" tabindex="-1"><a class="a-title" href="/">轻雨飞飞飞</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div class="site-title-links" id="site-nav"><ul><li><a href="/">대문</a></li><li><a href="/archives">아카이브</a></li><li><a href="/tags">태그</a></li><li class="soc"><a href="https://github.com/qkyufw" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="fa fa-github">&nbsp;</i></a><a href="https://qkyufw.github.io/atom.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2026&nbsp;<a target="_blank" href="https://qkyufw.github.io" rel="noopener noreferrer">qkyufw</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div class="col-sm-9 col-xs-12 main-container invisible" id="main-container"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>键盘风暴+AI：一个 idea 制造机</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2025-07-07</span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a class="a-tag" href="/tags/AI/" title="AI">AI</a><span>&nbsp;</span><a class="a-tag" href="/tags/键盘风暴/" title="键盘风暴">键盘风暴</a><span>&nbsp;</span><a class="a-tag" href="/tags/头脑风暴/" title="头脑风暴">头脑风暴</a><span>&nbsp;</span></span></p><p class="post-abstract"><p>可能还有人对我之前写的<a href="/2025/05/30/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4%EF%BC%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E7%94%A8AI%20%E5%AE%8C%E6%88%90%E7%9A%84%E5%89%8D%E7%AB%AF%E7%99%BD%E6%9D%BF%E9%A1%B9%E7%9B%AE/" title="键盘风暴：一个完全用AI 完成的前端白板项目">键盘风暴</a>有一些印象，最近我在一位朋友的建议下，加上了 AI 功能，又拼拼凑凑改了一个 MVP 版本出来，在这里分享一下。</p>
+<p>我加上了三个功能，分别是：扩展思路，整理精简，导出草稿，名字取得比较随意，后面可能还会修改。</p>
+<h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><h3 id="扩展思路"><a href="#扩展思路" class="headerlink" title="扩展思路"></a>扩展思路</h3><p>如果您读过我的《键盘风暴》这篇文章，那么您应该也了解，这个项目主要是为了头脑风暴进行的一些开发，我们之所以进行头脑风暴，就是为了得到尽可能多的 idea，尽可能丰富，乃至天马行空，从而得到一个最佳的 idea，来解决我们需要的问题。</p>
+<p>我们进行头脑风暴可能总会缺少一些灵感 💡，但是在 AI 时代，<strong>idea 非常廉价！<strong>我们可以通过这里的</strong>扩展思路</strong>功能，让 AI 由已有的想法（即使只有一个主题）产生无数的 idea。</p>
+<p>产生的 idea 不满意？删除即可，我们还能让 AI 给我们更多的灵感！</p>
+<p>idea 数量还不够？让 AI 继续根据已有的新内容继续生成即可，换换提示词也不错。</p>
+<p>这样，我们可以得到<strong>无限的灵感</strong>！</p>
+<h3 id="整理精简"><a href="#整理精简" class="headerlink" title="整理精简"></a>整理精简</h3><p>这个功能很简单，点击后，AI 将会读取已有的卡片数据，自动将其整理归纳。不管是团队头脑风暴过程中的想法，还是 AI 发散出来的 idea 们，一键整理归纳精简。</p>
+<p>另外还有一个 逻辑整理 功能，会将线数据也一并进行整理归纳，但是还不太稳定。</p>
+<h3 id="导出草稿"><a href="#导出草稿" class="headerlink" title="导出草稿"></a>导出草稿</h3><p>原本的键盘风暴的一种保存形式是导出为 markdown 文件，我也考虑到，既然我们能将 idea 整理归纳好，何不直接再导出一份草稿呢？</p>
+<p>原本与大语言模型对话，给它一个标题和一些残缺的想法，它可能不会给我们一个满意的文章，但是这个方案将基于我们选择好的，整理好的 idea 去生成一份草稿使用。</p>
+<p><strong>之所以选择生成得到的是草稿</strong>，是因为我觉得当前 AI 不可能给我们一份完美满足我们要求的文章，绝大部分情况下，我们都需要改正它给我们的内容，我想要强调这个观点，因此这样写了这个功能。我们是要利用好 AI，而不是被它奴役。</p>
+<p>另外，这个功能也加上了逻辑草稿的功能，也会考虑线数据进行草稿生成，同样也还不算特别稳定。</p>
+<h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>假如您是一位视频博主，想要做一期关于小米汽车的内容</p>
+<img src="/2025/07/07/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4+AI%EF%BC%9A%E4%B8%80%E4%B8%AA%20idea%20%E5%88%B6%E9%80%A0%E6%9C%BA/01-%E7%A4%BA%E4%BE%8B%E5%9C%BA%E6%99%AF.png" class="" title="示例场景">
+
+<p>您可以这样简单的只写上这样的一个主题</p>
+<img src="/2025/07/07/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4+AI%EF%BC%9A%E4%B8%80%E4%B8%AA%20idea%20%E5%88%B6%E9%80%A0%E6%9C%BA/02-%E5%86%99%E4%B8%8B%E4%B8%BB%E9%A2%98.png" class="" title="写下主题">
+
+<p>然后填上您想要的描述，设置好您想要的温度，点击发散</p>
+<img src="/2025/07/07/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4+AI%EF%BC%9A%E4%B8%80%E4%B8%AA%20idea%20%E5%88%B6%E9%80%A0%E6%9C%BA/03-%E5%A1%AB%E5%86%99%E6%8F%8F%E8%BF%B0.png" class="" title="填写描述与温度">
+
+<p>您就可以得到不少有意思的 idea 了，您可以选择删除绝大部分你不喜欢的观点，再让 AI 往某个你感兴趣的方向，继续拓展，从广度往深度拓展，这样，<strong>你可能能从导师给的一个题目，得到一篇完整的，思路方向明确的论文</strong>，或者一份策划？或者 anything？🧠 脑子有点不够用了。</p>
+<p>这里感觉大部分观点都很有意思，我删除了一两张卡片，再选择让 AI 整理精简一下</p>
+<img src="/2025/07/07/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4+AI%EF%BC%9A%E4%B8%80%E4%B8%AA%20idea%20%E5%88%B6%E9%80%A0%E6%9C%BA/04-%E5%8F%91%E6%95%A3%E7%BB%93%E6%9E%9C.png" class="" title="发散出的 idea">
+
+<p>这个整理的过程温度一般建议低一点</p>
+<img src="/2025/07/07/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4+AI%EF%BC%9A%E4%B8%80%E4%B8%AA%20idea%20%E5%88%B6%E9%80%A0%E6%9C%BA/05-%E6%95%B4%E7%90%86%E8%AE%BE%E7%BD%AE.png" class="" title="整理精简设置">
+
+<p>然后我们就能看到 AI 帮我们分好类，总结好了</p>
+<p>再点击导出草稿，温度随意，满意即可</p>
+<img src="/2025/07/07/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4+AI%EF%BC%9A%E4%B8%80%E4%B8%AA%20idea%20%E5%88%B6%E9%80%A0%E6%9C%BA/06-%E5%AF%BC%E5%87%BA%E8%8D%89%E7%A8%BF.png" class="" title="导出草稿">
+
+<img src="/2025/07/07/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4+AI%EF%BC%9A%E4%B8%80%E4%B8%AA%20idea%20%E5%88%B6%E9%80%A0%E6%9C%BA/07-%E8%8D%89%E7%A8%BF%E6%95%88%E6%9E%9C.png" class="" title="生成的草稿">
+
+<p>这样就得到一篇有意思的文章了，或者我们也可以改改任务描述，让 AI 重新生成，得到下面这样的草稿</p>
+<img src="/2025/07/07/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4+AI%EF%BC%9A%E4%B8%80%E4%B8%AA%20idea%20%E5%88%B6%E9%80%A0%E6%9C%BA/08-%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90%E7%9A%84%E8%8D%89%E7%A8%BF.png" class="" title="重新生成的草稿">
+
+<p>在调整好之后，后续我们只需要导出 markdown，下载进行修改即可</p>
+<h2 id="体验地址"><a href="#体验地址" class="headerlink" title="体验地址"></a>体验地址</h2><p><a href="https://qkyufw.github.io/kb-storm/">键盘风暴</a></p>
+<h2 id="需要补充的内容"><a href="#需要补充的内容" class="headerlink" title="需要补充的内容"></a>需要补充的内容</h2><ol>
+<li>AI 功能需要自己填入自己的 API，因为这只是一个 MVP 工具，我这里只测试了硅基流动的 API 可以正常使用，其他的 API 没有测试过</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/qkyufw/kb-storm/blob/master/doc/AI_FEATURES_UPDATE.md">更新说明</a></li>
+<li>它生成的内容是基于屏幕所能看到的内容进行的，如果你有不想要 AI 加入生成的卡片，您只需要把它移动到屏幕区域外即可</li>
+<li>绝大部分内容依旧由 AI 完成，不少细节需要修改完善</li>
+<li>AI 发散的过程中，可以根据需要的相关度或者天马行空的程度调整温度，整理精简的过程建议温度低一些</li>
+<li>确保你要处理的内容在可视区域，你不处理的东西已删除或在可视区域外</li>
+<li>生成的内容如果不满意可以撤销重试，或者删除继续生成</li>
+<li>有不少思维导图工具都有相关的 AI 能力，而键盘风暴主要还是服务于头脑风暴，灵感迸发，像内容创作，或者论文写作等我想象不到的场景，应该都是有效的。个人玩的中感觉非常的长脑子 🧠。</li>
+<li><strong>其他暂时还没有想到的内容</strong></li>
+<li>感谢您的 <strong>star</strong> 🌹</li>
+</ol>
+<p>（郑重声明！下面这篇文章由 AI 生成，只为了演示功能，内容图一乐！）</p>
+<hr>
+<h1 id="雷布斯抢先马斯克！小米Marsu7《火星探索版》开启星际出行时代"><a href="#雷布斯抢先马斯克！小米Marsu7《火星探索版》开启星际出行时代" class="headerlink" title="雷布斯抢先马斯克！小米Marsu7《火星探索版》开启星际出行时代"></a>雷布斯抢先马斯克！小米Marsu7《火星探索版》开启星际出行时代</h1><p>当马斯克还在为SpaceX的火星移民计划筹集资金时，雷军已通过小米汽车”火星探索版”让消费者提前体验火星生活。这款名为Marsu7的概念车型，将航天科技与汽车工业完美融合，重新定义了”跨界”的宇宙级含义。</p>
+<h2 id="来自火星的设计语言"><a href="#来自火星的设计语言" class="headerlink" title="来自火星的设计语言"></a>来自火星的设计语言</h2><p>小米Marsu7《火星探索版》的设计灵感直接源自NASA火星探测车，其外观呈现出强烈的未来科技感与硬派全地形特征：</p>
+<ul>
+<li><strong>独特配色方案</strong>：橄榄绿与铁锈红两款限定配色，车漆中掺入真实陨石粉末，每辆车都带有宇宙物质的独特印记</li>
+<li><strong>航天级材料应用</strong>：关键部件采用NASA认证的航天合金材料，特别是车门把手等高频接触部位</li>
+<li><strong>全地形适应能力</strong>：针对火星地表环境开发的悬挂系统，使其在地球各种极端路况下都能游刃有余</li>
+</ul>
+<h2 id="沉浸式火星科技体验"><a href="#沉浸式火星科技体验" class="headerlink" title="沉浸式火星科技体验"></a>沉浸式火星科技体验</h2><p>Marsu7不仅是一辆交通工具，更是一个移动的火星科普平台：</p>
+<h3 id="智能交互系统"><a href="#智能交互系统" class="headerlink" title="智能交互系统"></a>智能交互系统</h3><ul>
+<li><strong>“火星”AI助手</strong>：搭载专业宇宙知识库，能实时解说天文现象，回答各类星际旅行疑问</li>
+<li><strong>星际导航系统</strong>：除常规导航外，可显示当前位置的星座分布及与火星的实时距离</li>
+</ul>
+<h3 id="重力模拟驾驶"><a href="#重力模拟驾驶" class="headerlink" title="重力模拟驾驶"></a>重力模拟驾驶</h3><ul>
+<li>革命性的<strong>0.38倍地球重力模式</strong>（模拟火星重力环境）</li>
+<li>配合专用驾驶座椅，带来前所未有的漂浮感驾驶体验</li>
+</ul>
+<h3 id="天文观测功能"><a href="#天文观测功能" class="headerlink" title="天文观测功能"></a>天文观测功能</h3><ul>
+<li><strong>穹顶式全景天窗</strong>：集成天文滤镜，可自动标识火星运行轨道</li>
+<li>夜间停车时自动切换为天文观测模式，车顶投影显示星座图谱</li>
+</ul>
+<h2 id="航天级营销生态"><a href="#航天级营销生态" class="headerlink" title="航天级营销生态"></a>航天级营销生态</h2><p>小米为Marsu7打造了完整的星际体验闭环：</p>
+<ol>
+<li><p><strong>“红移计划”同步发售</strong><br>新车上市时间精确匹配中国火星探测器发射窗口</p>
+</li>
+<li><p><strong>AR虚拟发布会</strong><br>通过增强现实技术，在全球七大沙漠同步展示火星表面行驶测试</p>
+</li>
+<li><p><strong>外星主题充电网络</strong></p>
+<ul>
+<li>火星基地风格快充站设计</li>
+<li>充电时全息投影火星地表景观</li>
+<li>充电完成提示音采用NASA真实火星风声录音</li>
+</ul>
+</li>
+<li><p><strong>宇航员联名套装</strong><br>包含应急供氧系统、辐射监测仪等专业车载安全装备，满足极端环境出行需求</p>
+</li>
+</ol>
+<p>这款概念车的推出，标志着小米在智能出行领域实现了从”移动终端”到”星际终端”的跨越。当其他车企还在研究自动驾驶时，小米已经将目光投向了更远的星空——或许在不久的将来，我们真能驾驶着量产版Marsu7，在火星的红色大地上留下第一道车辙。</p>
+<h1 id="希望你喜欢！"><a href="#希望你喜欢！" class="headerlink" title="希望你喜欢！"></a>希望你喜欢！</h1></p></div><div class="share"><span>공유하기</span>&nbsp;<span class="soc"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></span><span class="soc"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></span><span class="soc"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=https://qkyufw.github.io/2025/07/07/键盘风暴+AI：一个 idea 制造机/%20我的博客%20键盘风暴+AI：一个 idea 制造机"></a></span></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/2026/02/11/%E4%BB%8E%E3%80%8A%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%AA%E8%A1%8C%E4%B8%9A%E3%80%8B%E5%88%B0%20agent%20skill/" title="从《如何快速了解一个行业》到 agent skill"><i class="fa fa-angle-double-left"></i>&nbsp;이전 포스트: 从《如何快速了解一个行业》到 agent skill</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2025/05/30/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4%EF%BC%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E7%94%A8AI%20%E5%AE%8C%E6%88%90%E7%9A%84%E5%89%8D%E7%AB%AF%E7%99%BD%E6%9D%BF%E9%A1%B9%E7%9B%AE/" title="键盘风暴：一个完全用AI 完成的前端白板项目">다음 포스트: 键盘风暴：一个完全用AI 完成的前端白板项目&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div><section id="comments"><script src="https://giscus.app/client.js" data-repo="qkyufw/qkyufw.github.io" data-repo-id="R_kgDOQ94z6Q" data-category="General" data-category-id="DIC_kwDOQ94z6c4C2NjY" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="zh-CN" crossorigin="anonymous" async></script></section></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2026&nbsp;<a target="_blank" href="https://qkyufw.github.io" rel="noopener noreferrer">qkyufw</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script><script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script><script>mermaid.initialize({
+  startOnLoad: true,
+  theme: 'default'
+});</script></body></html>

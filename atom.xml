@@ -6,7 +6,7 @@
   <link href="https://qkyufw.github.io/atom.xml" rel="self"/>
   
   <link href="https://qkyufw.github.io/"/>
-  <updated>2026-02-11T12:58:36.593Z</updated>
+  <updated>2026-09-15T03:22:44.583Z</updated>
   <id>https://qkyufw.github.io/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>做了一个维护开发进度的 skill</title>
+    <link href="https://qkyufw.github.io/2026/09/04/%E5%81%9A%E4%BA%86%E4%B8%80%E4%B8%AA%E7%BB%B4%E6%8A%A4%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6%E7%9A%84%20skill/"/>
+    <id>https://qkyufw.github.io/2026/09/04/%E5%81%9A%E4%BA%86%E4%B8%80%E4%B8%AA%E7%BB%B4%E6%8A%A4%E5%BC%80%E5%8F%91%E8%BF%9B%E5%BA%A6%E7%9A%84%20skill/</id>
+    <published>2026-09-04T04:00:00.000Z</published>
+    <updated>2026-09-15T03:22:44.583Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我在开发的时候经常遇到一个问题：有时突然冒出一个新需求，优先级一插队，之前记着”以后再修”的技术债就慢慢忘掉了。或者休假回来，一时想不起开发到哪了。&lt;/p&gt;
+&lt;p&gt;于是我想，有没有什么办法能让 agent 知道当前的开发状态——就做了这样一个 skill：通过维护一个</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Agent" scheme="https://qkyufw.github.io/tags/Agent/"/>
+    
+    <category term="Skill" scheme="https://qkyufw.github.io/tags/Skill/"/>
+    
+    <category term="Claude Code" scheme="https://qkyufw.github.io/tags/Claude-Code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AI 的跨会话记忆：从想法到 Knit</title>
+    <link href="https://qkyufw.github.io/2026/05/07/AI%20%E7%9A%84%E8%B7%A8%E4%BC%9A%E8%AF%9D%E8%AE%B0%E5%BF%86%EF%BC%9A%E4%BB%8E%E6%83%B3%E6%B3%95%E5%88%B0%20Knit/"/>
+    <id>https://qkyufw.github.io/2026/05/07/AI%20%E7%9A%84%E8%B7%A8%E4%BC%9A%E8%AF%9D%E8%AE%B0%E5%BF%86%EF%BC%9A%E4%BB%8E%E6%83%B3%E6%B3%95%E5%88%B0%20Knit/</id>
+    <published>2026-05-07T04:00:00.000Z</published>
+    <updated>2026-09-15T03:22:39.532Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;问题：每次新会话，AI-从零开始&quot;&gt;&lt;a href=&quot;#问题：每次新会话，AI-从零开始&quot; class=&quot;headerlink&quot; title=&quot;问题：每次新会话，AI 从零开始&quot;&gt;&lt;/a&gt;问题：每次新会话，AI 从零开始&lt;/h2&gt;&lt;p&gt;在使用 Claude</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Agent" scheme="https://qkyufw.github.io/tags/Agent/"/>
+    
+    <category term="AI" scheme="https://qkyufw.github.io/tags/AI/"/>
+    
+    <category term="记忆" scheme="https://qkyufw.github.io/tags/%E8%AE%B0%E5%BF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>从《如何快速了解一个行业》到 agent skill</title>
@@ -40,6 +95,60 @@
     <category term="Agent" scheme="https://qkyufw.github.io/tags/Agent/"/>
     
     <category term="Skill" scheme="https://qkyufw.github.io/tags/Skill/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>键盘风暴+AI：一个 idea 制造机</title>
+    <link href="https://qkyufw.github.io/2025/07/07/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4+AI%EF%BC%9A%E4%B8%80%E4%B8%AA%20idea%20%E5%88%B6%E9%80%A0%E6%9C%BA/"/>
+    <id>https://qkyufw.github.io/2025/07/07/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4+AI%EF%BC%9A%E4%B8%80%E4%B8%AA%20idea%20%E5%88%B6%E9%80%A0%E6%9C%BA/</id>
+    <published>2025-07-07T04:00:00.000Z</published>
+    <updated>2026-09-15T03:22:22.678Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;可能还有人对我之前写的&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="AI" scheme="https://qkyufw.github.io/tags/AI/"/>
+    
+    <category term="键盘风暴" scheme="https://qkyufw.github.io/tags/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4/"/>
+    
+    <category term="头脑风暴" scheme="https://qkyufw.github.io/tags/%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>键盘风暴：一个完全用AI 完成的前端白板项目</title>
+    <link href="https://qkyufw.github.io/2025/05/30/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4%EF%BC%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E7%94%A8AI%20%E5%AE%8C%E6%88%90%E7%9A%84%E5%89%8D%E7%AB%AF%E7%99%BD%E6%9D%BF%E9%A1%B9%E7%9B%AE/"/>
+    <id>https://qkyufw.github.io/2025/05/30/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4%EF%BC%9A%E4%B8%80%E4%B8%AA%E5%AE%8C%E5%85%A8%E7%94%A8AI%20%E5%AE%8C%E6%88%90%E7%9A%84%E5%89%8D%E7%AB%AF%E7%99%BD%E6%9D%BF%E9%A1%B9%E7%9B%AE/</id>
+    <published>2025-05-30T04:00:00.000Z</published>
+    <updated>2026-09-15T03:21:51.671Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;作为一个初出茅庐的小程序员，看到最近 AI 代码能力越来越强，就忍不住想要用 AI 来尝试完成一个项目，&lt;strong&gt;看看只靠 AI</summary>
+        
+      
+    
+    
+    
+    
+    <category term="AI" scheme="https://qkyufw.github.io/tags/AI/"/>
+    
+    <category term="键盘风暴" scheme="https://qkyufw.github.io/tags/%E9%94%AE%E7%9B%98%E9%A3%8E%E6%9A%B4/"/>
+    
+    <category term="前端" scheme="https://qkyufw.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   

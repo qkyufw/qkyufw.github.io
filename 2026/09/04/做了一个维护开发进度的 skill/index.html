@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author"><title>做了一个维护开发进度的 skill · 我的博客</title><meta name="description" content="我在开发的时候经常遇到一个问题：有时突然冒出一个新需求，优先级一插队，之前记着”以后再修”的技术债就慢慢忘掉了。或者休假回来，一时想不起开发到哪了。
+于是我想，有没有什么办法能让 agent 知道当前的开发状态——就做了这样一个 skill：通过维护一个 state 文档，记录当前的开发位置。
+指令"><meta name="og:description" content="我在开发的时候经常遇到一个问题：有时突然冒出一个新需求，优先级一插队，之前记着”以后再修”的技术债就慢慢忘掉了。或者休假回来，一时想不起开发到哪了。
+于是我想，有没有什么办法能让 agent 知道当前的开发状态——就做了这样一个 skill：通过维护一个 state 文档，记录当前的开发位置。
+指令"><meta name="twitter:site" content="我的博客"><meta name="twitter:title" content="做了一个维护开发进度的 skill"><meta name="twitter:card" content="summary"><meta name="keywords" content="博客,技术,生活"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 8.1.1"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div class="container" id="stage"><div class="row"><div class="col-sm-3 col-xs-12 side-container invisible" id="side-bar"><div class="vertical-text site-title"><h3 class="site-title-small" tabindex="-1"><a class="a-title" href="/">Being Present, Opening Up, Doing What Matters</a></h3><h1 class="site-title-large" tabindex="-1"><a class="a-title" href="/">轻雨飞飞飞</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div class="site-title-links" id="site-nav"><ul><li><a href="/">대문</a></li><li><a href="/archives">아카이브</a></li><li><a href="/tags">태그</a></li><li class="soc"><a href="https://github.com/qkyufw" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="fa fa-github">&nbsp;</i></a><a href="https://qkyufw.github.io/atom.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2026&nbsp;<a target="_blank" href="https://qkyufw.github.io" rel="noopener noreferrer">qkyufw</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div class="col-sm-9 col-xs-12 main-container invisible" id="main-container"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>做了一个维护开发进度的 skill</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2026-09-04</span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a class="a-tag" href="/tags/Agent/" title="Agent">Agent</a><span>&nbsp;</span><a class="a-tag" href="/tags/Skill/" title="Skill">Skill</a><span>&nbsp;</span><a class="a-tag" href="/tags/Claude-Code/" title="Claude Code">Claude Code</a><span>&nbsp;</span></span></p><p class="post-abstract"><p>我在开发的时候经常遇到一个问题：有时突然冒出一个新需求，优先级一插队，之前记着”以后再修”的技术债就慢慢忘掉了。或者休假回来，一时想不起开发到哪了。</p>
+<p>于是我想，有没有什么办法能让 agent 知道当前的开发状态——就做了这样一个 skill：通过维护一个 state 文档，记录当前的开发位置。</p>
+<p>指令核心就两句：</p>
+<blockquote>
+<p>开工：先读 <code>docs/STATE.md</code>。 收工：把 <code>docs/STATE.md</code> 同步到实际进展。</p>
+</blockquote>
+<p>STATE.md 是单文件状态页，分六节：</p>
+<table>
+<thead>
+<tr>
+<th>节</th>
+<th>放什么</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GOAL</td>
+<td>大方向，一句话(可选——没定过就不写)</td>
+</tr>
+<tr>
+<td>NOW</td>
+<td>现在在干嘛，卡在哪</td>
+</tr>
+<tr>
+<td>NEXT</td>
+<td>接下来做什么，每条带验收标准</td>
+</tr>
+<tr>
+<td>DEBT</td>
+<td>欠的债，每条带”为什么不修 + 什么情况该修”</td>
+</tr>
+<tr>
+<td>LOG</td>
+<td>走过了什么，每行带一句为什么</td>
+</tr>
+<tr>
+<td>MAP</td>
+<td>相关的文件路径</td>
+</tr>
+</tbody></table>
+<p>GOAL 是大方向，NOW 是当前焦点——一个是去哪，一个是走到了哪。只记用户原话，agent 不自己发明目标。</p>
+<p>DEBT 是技术债的挂账处。每条债写清”为什么不修”和”什么情况该修”之后，它就不再只活在”当时都知道”里了；每次收工同步会顺手反查一遍：这次干的事，碰没碰到哪条债的到期条件。比如有一条”权限模型未做，区县分级可见时该修”的债，等真要做区县分级那天，它是被翻出来的，不是被想起来的。</p>
+<p>LOG 每行带一句为什么。做了什么，git log 里都有；六个月后还值钱的，是当时为什么这么选。</p>
+<p>MAP 放相关文档的路径。细节都外放在别的文档里，用的时候按路径取，状态文件本身保持小。</p>
+<p>条目的生命周期很简单：债 → 决定修 → 进 NEXT → 修完 → LOG 记一行 → 删除。完成即删，不留”✅ 已完成”的标记占地方。历史不会丢：每次收工，STATE 的变更和代码改动进同一个 commit ，所以删掉的条目在 git 历史里都翻得到——要看某条债是哪天修的、当时写了什么，翻旧版本的文件就行。</p>
+<p>markdown 状态文件和 todo 列表这种东西一样会烂，所以每节有行数上限，另外配了一道物理的门：一个小脚本挂在 Claude Code 的 Stop hook 上，每次收工数一遍各节行数，超了就 exit 2 ，把超限信息喂回 agent——agent 得自己压完、给出各节行数，才算收工。</p>
+<hr>
+<p>运转了一段时间，个人感觉能降低我的日常维护成本。我再加上一点点管控，可以让 agent 自己读 state 文档、自己挑当前最该做的任务、自己实现、再更新 state ，然后继续挑下一个——浅浅地跑起了一个 loop 。</p>
+<p>从我的问题上来说，这个 skill 满足了我的需求，还能浅浅跑一下 loop 。我想知道的是：这个方案好吗 🤔</p>
+<p>skill: <a target="_blank" rel="noopener" href="https://github.com/qkyufw/ac-sync">https://github.com/qkyufw/ac-sync</a></p>
+</p></div><div class="share"><span>공유하기</span>&nbsp;<span class="soc"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></span><span class="soc"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></span><span class="soc"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=https://qkyufw.github.io/2026/09/04/做了一个维护开发进度的 skill/%20我的博客%20做了一个维护开发进度的 skill"></a></span></div><div class="pagination"><p class="clearfix"><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2026/05/07/AI%20%E7%9A%84%E8%B7%A8%E4%BC%9A%E8%AF%9D%E8%AE%B0%E5%BF%86%EF%BC%9A%E4%BB%8E%E6%83%B3%E6%B3%95%E5%88%B0%20Knit/" title="AI 的跨会话记忆：从想法到 Knit">다음 포스트: AI 的跨会话记忆：从想法到 Knit&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div><section id="comments"><script src="https://giscus.app/client.js" data-repo="qkyufw/qkyufw.github.io" data-repo-id="R_kgDOQ94z6Q" data-category="General" data-category-id="DIC_kwDOQ94z6c4C2NjY" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="zh-CN" crossorigin="anonymous" async></script></section></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2026&nbsp;<a target="_blank" href="https://qkyufw.github.io" rel="noopener noreferrer">qkyufw</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script><script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script><script>mermaid.initialize({
+  startOnLoad: true,
+  theme: 'default'
+});</script></body></html>
